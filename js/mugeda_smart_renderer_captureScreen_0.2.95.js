@@ -1,0 +1,3 @@
+;(function(){'use strict';var mm=MugineRequire("Utils/Module"),nm=MugineRequire("Utils/Plugin"),om=MugineRequire("Action/Action"),pm=MugineRequire("Render/CanvasRender");function qm(){qm.j.constructor.apply(this,arguments);this.jc=null}mm.extend(qm,om);
+qm.prototype.M=function(){var a=this;if(a.eb()){var b=this.$.param,c=b.target_name,d=a.P.c.S,e=d.za(b.target_zone,!0);if(e){var f=e.alpha;e.alpha=0}var g=d.za(c,!0);pm.kl(a.P.c,function(b,c){try{if(e){e.alpha=f;var d=pm.Ny(e,a.P.c,b).toDataURL()}else d=b.toDataURL()}catch(n){alert("\u622a\u56fe\u5931\u8d25 \uff08"+n.toString()+"\uff09");c();return}g.src=d;c();(d=a.Va.Wf)&&d.M.apply(d);qm.j.M.apply(a,arguments)})}};mm.H("Action.CaptureScreen",qm);nm.Po("",null);nm.Po("capture",qm);
+})();
